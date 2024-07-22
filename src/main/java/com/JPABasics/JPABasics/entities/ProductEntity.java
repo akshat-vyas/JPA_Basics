@@ -22,7 +22,7 @@ import java.time.LocalDateTime;
         name = "product_table",
         uniqueConstraints = {
                 @UniqueConstraint(name = "sku_unique", columnNames = {"sku"}),
-//                @UniqueConstraint(name="title_price_unique",columnNames = {"title_x", "price"})
+                @UniqueConstraint(name="title_price_unique",columnNames = {"title_x", "price"})
         },
         indexes = {
                 @Index(name = "sku_index", columnList = "sku")
@@ -31,7 +31,7 @@ import java.time.LocalDateTime;
 
 
 
-public class Product {
+public class ProductEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
